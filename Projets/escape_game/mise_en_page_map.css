@@ -1,0 +1,57 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url(Images/map.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.clickable-area {
+    position: absolute;
+    cursor: pointer;
+}
+
+.entrance {
+    top: 150px;
+    left: 330px;
+    width: 150px;
+    height: 150px;
+}
+.dining-room {
+    top: 265px;
+    left: 600px;
+    width: 150px;
+    height: 150px;
+}
+.library {
+    top: 400px;
+    left: 330px;
+    width: 150px;
+    height: 150px;
+}
+.auting-room {
+    top: 150px;
+    left: 850px;
+    width: 150px;
+    height: 150px;
+}
+.droiwing-room {
+    top: 400px;
+    left: 850px;
+    width: 150px;
+    height: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+.text {
+    margin-right: 1150px;
+    margin-left: 10px;
+}

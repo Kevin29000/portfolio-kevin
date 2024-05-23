@@ -1,0 +1,207 @@
+body {
+    background-image: url(Images/background6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-size: 110%;
+}
+
+.header {
+    background-color: #287265;
+    height: 80px;
+    margin: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 170%;
+    letter-spacing: 0.1rem;
+    margin-left: 130px;
+}
+
+ul li a:hover {
+    color: #09e0e7;
+    text-decoration: underline;
+}
+
+.menu li {
+    float: left;
+    padding: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+h1 {
+    border: 2px solid white;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: white;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 220%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin-left: 25px;
+}
+
+.center_project {
+    text-align: center;
+    font-size: 125%;
+}
+
+.contenu {
+    margin: 120px;
+    margin-top: 70px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    width: 150px;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card img {
+    height: auto;
+    object-fit: cover;
+}
+
+.download_button {
+    margin-top: 100px;
+    background-color: #287265;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 120%;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download_button:hover {
+    background-color: #09e0e7;
+}
+
+.top {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    margin-top: 100px;
+    background-color: #287265;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 120%;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.top:hover {
+    background-color: #09e0e7;
+}
+
+.lien {
+    color: white;
+}
+
+.lien:hover {
+    text-decoration: underline;
+}
+
+fieldset {
+    margin-top: 100px;
+    width: 600px;
+    background-color: #287265;
+    box-shadow: 5px 5px 20px 1px 10px rgb(85,85,85);
+    border: 0px;
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 10px;
+    height: 550px;
+}
+
+.contact_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact_left_title hr{
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+.contact_inputs {
+    width: 600px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 20px;
+}
+
+.contact_left textarea {
+    height: 150px;
+    padding-top: 15px;
+}
+
+.contact_inputs:focus {
+    border: 3px solid #09e0e7;
+}
+
+.submit_button {
+    margin-top: 5px;
+    color: white;
+    background-color: #09e0e7;
+    width: 200px;
+    height: 50px;
+    font-size: 21px;
+    border-radius: 20px;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.trait_long {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.trait_court {
+    margin-left: 250px;
+    margin-right: 250px;
+    border: 2px solid;
+    border-radius: 10px;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Jeu du + ou du -</title>
+        <link rel="stylesheet" href="site_de_revision/mise_en_page.css">
+        <script type="text/javascript" language="JavaScript">
+            let nombre=Math.floor(Math.random()*1000); // Maths.floor transforme le float(par defaut) en int
+            // alert pour afficher directement 
+            function affiche()
+            { 
+                if (nombre==document.getElementById("test").value)
+                {
+                    document.getElementById("valeur").innerHTML="Vous avez trouvé le nombre";
+                }
+                else 
+                if (nombre>document.getElementById("test").value)
+                {
+                    document.getElementById("valeur").innerHTML="Le nombre est plus grand";
+                }
+                else
+                if (nombre<document.getElementById("test").value)
+                {
+                    document.getElementById("valeur").innerHTML="Le nombre est plus petit";
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <form name="formu" action="#">
+            Saisir un chiffre entre 1 et 1000<br>
+            <input type="text" name="test" id="test">
+            <div id="valeur"></div>
+            <input type="button" value="Tester" onclick="affiche()">
+        </form>
+    </body>
+</html>

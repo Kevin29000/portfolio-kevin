@@ -1,0 +1,61 @@
+body {
+    background-image: url(Images/library.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 30px;
+    color: white;
+}
+
+.clickable-area {
+    position: absolute;
+    cursor: pointer;
+}
+
+.map {
+    top: 435px;
+    left: 400px;
+    width: 600px;
+    height: 170px;
+}
+
+.indice_1 {
+    top: 220px;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+}
+
+.indice_2 {
+    top: 130px;
+    left: 930px;
+    width: 100px;
+    height: 50px;
+}
+
+.indice_3 {
+    top: 280px;
+    left: 525px;
+    width: 100px;
+    height: 50px;
+}
+
+.indice_4 {
+    top: 450px;
+    left: 140px;
+    width: 100px;
+    height: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+li {
+    margin-left: 170px;
+    list-style-type: none;
+}

@@ -1,0 +1,16 @@
+body {
+    background-image: url(Images/exterieur.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    margin-top: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+}

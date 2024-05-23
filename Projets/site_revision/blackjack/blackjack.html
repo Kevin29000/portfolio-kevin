@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="css_blackjack.css"> 
+        <script type="text/javascript" language="JavaScript"> // RESTE A FAIRE : IL RESTE LA QUESTION 13 DU BLACK JACK A FAIRE !!!!!! Et afficher win ou loose même quand 21 n'est pas atteint !!
+            score_joueur=0;
+            function joueur(){
+                let carte=Math.floor(Math.random()*52);
+                document.getElementById("joueur").innerHTML+="<img src='cartes/"+carte+".jpg'>"; // += pour concatener et ajouter au lieu d'écraser
+                if (carte%13<=10 && carte%13>0) {
+                    score_joueur+=carte%13;
+                    document.getElementById("score_joueur").innerHTML=""+score_joueur+"";
+                }
+                else {
+                    score_joueur+=10;
+                    document.getElementById("score_joueur").innerHTML=""+score_joueur+"";
+                }
+                if (score_joueur>21){
+                    document.getElementById("loose").innerHTML="Vous avez perdu la manche !!";
+                }
+                else
+                if (score_joueur==21) {
+                    document.getElementById("win").innerHTML="Blackjack !! Vous avez gagné !";
+                }
+            }
+
+            score_banque=0;
+            function banque(){
+                let carte=Math.floor(Math.random()*52);
+                document.getElementById("banque").innerHTML+="<img src='cartes/"+carte+".jpg'>"; // += pour concatener et ajouter au lieu d'écraser
+                if (carte%13<=10 && carte%13>0) {
+                    score_banque+=carte%13;
+                    document.getElementById("score_banque").innerHTML=""+score_banque+"";
+                }
+                else {
+                    score_banque+=10;
+                    document.getElementById("score_banque").innerHTML=""+score_banque+"";
+                }
+                if (score_banque>21){
+                    document.getElementById("win").innerHTML="Vous avez gagné la manche !!";
+                }
+                while (score_banque<=score_joueur) {
+                banque();
+                }
+            }
+
+            function reload() {
+                location.reload();
+            }
+            
+        </script>
+    </head>
+    <body>
+        <center>
+            <fieldset>
+                <h1>Blackjack</h1>
+                <h2>Les cartes de la banque</h2>
+                <div id="banque">
+                    <img src="cartes/verso.jpg" alt="">
+                </div>
+                <h2>Vos cartes</h2>
+                <div id="joueur">
+                    <img src="cartes/verso.jpg" alt="">
+                </div>
+            </fieldset>
+            La banqe à <class id="score_banque"></class><br> <br>
+            <class id="win"><class id="loose">Vous avez <class id=score_joueur></class>. Carte ou reste ?</class></class> <br>
+            <input type="button" value="Carte" onclick="joueur()"> <input type="button" value="Reste" onclick="banque()"> <input type="button" value="Rejouer" onclick="reload()">
+        </center>
+    </body>
+</html>
